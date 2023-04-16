@@ -49,7 +49,7 @@ Select the `Claims` tab and click on `Add Claim`.
 
 ![image](https://user-images.githubusercontent.com/45366367/232322328-3a2d4e3e-c145-495b-8f14-0fccf70c6b16.png)
 
-Secify `groups` for `Name`. `Include in token type` ID Token Always. `Value type` Groups. `Filter` Starts with k8s. Click `Create`
+Specify `groups` for `Name`. `Include in token type` ID Token Always. `Value type` Groups. `Filter` Starts with k8s. Click `Create`
 
 ![image](https://user-images.githubusercontent.com/45366367/232322614-473a1fe8-d5f9-4f4a-930c-a58fc2fc3e9c.png)
 
