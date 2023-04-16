@@ -62,7 +62,7 @@ Name and Description is `K8s`. `Assign to the following clients` is `K8s`. Click
 
 ![image](https://user-images.githubusercontent.com/45366367/232323076-3e218ed8-c389-4905-897c-5dcbbe5332ac.png)
 
-Click `Add Role`
+Click `Add Rule`
 
 ![image](https://user-images.githubusercontent.com/45366367/232323133-3a820b71-c845-45c1-b7b3-4c83a9240995.png)
 
