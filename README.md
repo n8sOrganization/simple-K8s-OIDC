@@ -111,7 +111,7 @@ EOF
 
 This config must be performed on a client with a web browser. It will not work for hosts you are SSH connected to. There 
 is an Authorization code flow with a keyboard that is similar to how you enter a code in a browser when you sign-in to 
-streaming apps. I'm not covering it here, but it's in the kubelogin dcos.
+smart tv streaming apps. I'm not covering it here, but it's in the kubelogin dcos.
 
 
 The installation steps vary based on your OS. Rather than recreate the docs for it, I'll point you to the 
