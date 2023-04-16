@@ -111,7 +111,7 @@ roleRef:
   name: cluster-admin
 subjects:
 - kind: Group
-  name: k8s-cluster-admins
+  name: k8s-cluster-admins #This is the group membership we present in our OIDC ID Token
 EOF
 ```
 
