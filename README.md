@@ -10,10 +10,9 @@ https://developer.okta.com/signup/
 
 ### Configure Directory Services and OIDC
 
-From the `Directory` link in the left gutter, use the `Group` and `People` links to create a group and a user. Set the user password 
-to not require change on first login. Place the user in the group.
+From the `Directory` link in the left gutter, use the `Group` and `People` links to create a group called `k8s-cluster-admins` and a user. Set the user password to not require change on first login. Place the user in the group.
 
-For the flow of this guide, preface your group name with `k8s-` (e.g. k8s-cluster-admins)
+For the flow of this guide, preface your group name with `k8s-` (e.g. k8s-cluster-admins).
 
 ![image](https://user-images.githubusercontent.com/45366367/232320134-f70a913d-5eb6-4251-a0b6-d284d245f2a7.png)
 
