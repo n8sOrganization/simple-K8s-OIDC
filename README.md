@@ -122,7 +122,7 @@ https://github.com/int128/kubelogin
 
 ### Edit your kube config 
 
-1. Add the following under users section:
+1. Add the following under users section (Add the correct issuer url and client id):
 
 ```console
 users:
