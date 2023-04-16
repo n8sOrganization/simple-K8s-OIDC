@@ -71,6 +71,12 @@ Copy the `Issuer URL` for later.
 
 That does it for setting up your OIDC enabled Authorization Server. We can now authenticate to it and receive access and ID tokens.
 
+We've defined a group that will be used in our cluster RBAC. We've setup an Authorization Server and copied the issuer URL to configure our Client. We've defined an auth flow for OIDC with System grant type (System is a Public Cient config that allows redirect to localhost). We've said we want to generate ID tokens and include only groups from the Directory service that begin with k8s- within the token Scope fields. Next we configure kube-api server and kubectl.
+
+These two links provide further background on the grant type we've selected to use:
+https://www.oauth.com/oauth2-servers/oauth-native-apps/
+https://www.oauth.com/oauth2-servers/oauth-native-apps/redirect-urls-for-native-apps/
+
 ### Configure your kube-apiserver to trust the Auth Server minted tokens.
 
 This step will vary based on your K8s cluster. I will show the steps for a cluster deployed by Kubeadm. If you are using a different 
