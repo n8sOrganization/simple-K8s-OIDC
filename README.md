@@ -159,6 +159,11 @@ kubectl get nodes --user=oidc
 
 This will pop you to your browser with a login page. Sign in as your user and that's it!
 
+![image](https://user-images.githubusercontent.com/45366367/232607011-86fd182f-079b-4612-98c8-a98b7c18e301.png)
+
+![image](https://user-images.githubusercontent.com/45366367/232607102-fa6fb9f4-05b1-4348-80a5-a8997e44ffe4.png)
+
+
 Certificate and SA token based authentication will still work. But you can now craft and distribute kube config files without including security sensitive certificates.
 
 You can use the same Authorization server for as many clusters as you'd like. Simply configure the cluster RBAC to grant 
