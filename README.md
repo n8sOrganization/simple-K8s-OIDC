@@ -97,7 +97,7 @@ spec:
     - --oidc-client-id=<The Client ID we saved earlier>
     - --oidc-username-claim=email
     - --oidc-groups-claim=groups
-```
+``` 
 
 ### Add RBAC for OIDC group
 
