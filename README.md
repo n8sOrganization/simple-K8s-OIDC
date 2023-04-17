@@ -156,4 +156,10 @@ kubectl get nodes --user=oidc
 This will pop you to your browser with a login page. Sign in as your user and that's it!
 
 You can use the same Authorization server for as many clusters as you'd like. Simply configure the cluster RBAC to grant 
-privileges based on group names from your IdP Directory Service. 
+privileges based on group names from your IdP Directory Service. A good next step would be creating additional groups and users, assigning RBAC to various groups based on namespaces (I personally don't like the fantasy of namespace tenanting K8s clusters, but you can play around with cluster admins vs. namespaced users). 
+
+There is a now abandned project called Gangway that aimed at making the config on the kubectl client side easier. I don't know where that ended up. But you could check it out.
+
+A newer project named Pinniped (I think that is a seal) exists to make it 'easy' to setup auth. But in my few brief reviews of it, there are so many moving parts that I didn't get the 'easy button' sense at all. Worth keeping an eye on though.
+
+Net/net, this three part series was on OIDC more than K8s. While I've used K8s as a working example, I was aiming at conveying an understanding of how OAuth/OIDC JWTs are trusted and applied by Resource Servers.
