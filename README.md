@@ -99,6 +99,8 @@ spec:
 
 ### Add RBAC for OIDC group
 
+In this step, we create a ClusterRoleBinding to the default cluster-admin role with the group name we created in our Directory Service. The group name that is subsequently added to our ID Token as a Scope. kube-apiserver has no concept of groups beyond RBAC. If your token or certificate (regardless of what valid way it was created) says you belong to a group, then kube-apiserver will consider that against ClusterRoleBindigns and RoleBindings. 
+
 ```console
 kubectl apply -f - <<EOF
 kind: ClusterRoleBinding
@@ -111,7 +113,7 @@ roleRef:
   name: cluster-admin
 subjects:
 - kind: Group
-  name: k8s-cluster-admins #This is the group membership we present in our OIDC ID Token
+  name: k8s-cluster-admins #<-- This is the group membership we present in our OIDC ID Token
 EOF
 ```
 
