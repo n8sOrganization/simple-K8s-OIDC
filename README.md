@@ -169,7 +169,7 @@ Certificate and SA token based authentication will still work. But you can now c
 You can use the same Authorization server for as many clusters as you'd like. Simply configure the cluster RBAC to grant 
 privileges based on group names from your IdP Directory Service. A good next step would be creating additional groups and users, assigning RBAC to various groups based on namespaces (I personally don't like the fantasy of namespace tenanting K8s clusters, but you can play around with cluster admins vs. namespaced users). 
 
-There is a now abandned project called Gangway that aimed at making the config on the kubectl client side easier. I don't know where that ended up. But you could check it out.
+There is a now abandoned project called Gangway that aimed at making the config on the kubectl client side easier. I don't know where that ended up. But you could check it out.
 
 A newer project named Pinniped (I think that is a seal) exists to make it 'easy' to setup auth. But in my few brief reviews of it, there are so many moving parts that I didn't get the 'easy button' sense at all. Worth keeping an eye on though.
 
