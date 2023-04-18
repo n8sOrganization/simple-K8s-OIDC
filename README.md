@@ -163,6 +163,19 @@ This will pop you to your browser with a login page. Sign in as your user and th
 
 ![image](https://user-images.githubusercontent.com/45366367/232607102-fa6fb9f4-05b1-4348-80a5-a8997e44ffe4.png)
 
+You can use an online tool to decode your ID Token if you'd like to see what it contains:
+
+1. Print contents of the token file
+
+```console
+ cat  ~/.kube/cache/oidc-login/<should be only one file here to choose>
+```
+
+2. Copy everything between quotes after `{"id_token":` to your clipboard.
+
+3. Paster them into the `JWT String` input form at https://token.dev/
+
+Within the `Payload` output, you should see your username/email and groups you are a member of.
 
 Certificate and SA token based authentication will still work. But you can now craft and distribute kube config files without including security sensitive certificates.
 
