@@ -173,7 +173,7 @@ You can use an online tool to decode your ID Token if you'd like to see what it 
 
 2. Copy everything between quotes after `{"id_token":` to your clipboard.
 
-3. Paster them into the `JWT String` input form at https://token.dev/
+3. Paste them into the `JWT String` input form at https://token.dev/
 
 Within the `Payload` output, you should see your username/email and groups you are a member of.
 
