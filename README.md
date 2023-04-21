@@ -180,7 +180,7 @@ Within the `Payload` output, you should see your username/email and groups you a
 Certificate and SA token based authentication will still work. But you can now craft and distribute kube config files without including security sensitive certificates with keys.
 
 You can use the same Authorization server for as many clusters as you'd like. Simply configure the cluster RBAC to grant 
-privileges based on group names from your IdP Directory Service. A good next step would be creating additional groups and users, assigning RBAC to various groups based on namespaces (I personally don't like the fantasy of namespace tenanting K8s clusters, but you can play around with cluster admins vs. namespaced users). 
+privileges based on group names from your IdP Directory Service. A good next step would be creating additional groups and users, assigning RBAC to various groups based on namespaces. I personally don't like the fantasy of namespace tenanting K8s control planes, but you can play around with cluster admins vs. namespaced users which is a valid security task. In my next blog post, I cover vCluster which I consider a better method of multi-tenanting a K8s control plane.
 
 There is a now abandoned project called Gangway that aimed at making the config on the kubectl client side easier. I don't know where that ended up. But you could check it out.
 
