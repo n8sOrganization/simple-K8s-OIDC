@@ -177,7 +177,7 @@ You can use an online tool to decode your ID Token if you'd like to see what it 
 
 Within the `Payload` output, you should see your username/email and groups you are a member of.
 
-Certificate and SA token based authentication will still work. But you can now craft and distribute kube config files without including security sensitive certificates.
+Certificate and SA token based authentication will still work. But you can now craft and distribute kube config files without including security sensitive certificates with keys.
 
 You can use the same Authorization server for as many clusters as you'd like. Simply configure the cluster RBAC to grant 
 privileges based on group names from your IdP Directory Service. A good next step would be creating additional groups and users, assigning RBAC to various groups based on namespaces (I personally don't like the fantasy of namespace tenanting K8s clusters, but you can play around with cluster admins vs. namespaced users). 
