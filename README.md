@@ -40,8 +40,8 @@ _For the flow of this guide, preface your group names with `k8s-` (e.g. k8s-clus
 
 ![image](https://user-images.githubusercontent.com/45366367/232321528-ed786930-ae62-41ae-bf6a-981fa1afbce9.png)
 
-2. Give it the name `K8s`. Specify `http://localhost:8000` for `Audience`. Select `Okta URL` for `Issuer`. Click `Save`. 
-Copy the `Issuer URL` for later.
+2. Give it the name `K8s`. Specify `http://localhost:8000` for `Audience`. (You may need to click `Save` and then `Edit` to complete the rest of thsi step) Select `Okta URL` for `Issuer`. Click `Save`. 
+Copy the `Issuer URL` (In parenthesis after `Okta URL`) for later.
 
 ![image](https://user-images.githubusercontent.com/45366367/232322126-e3278d1b-d255-4213-8034-e3d4a39be62c.png)
 
