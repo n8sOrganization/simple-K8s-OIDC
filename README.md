@@ -1,7 +1,8 @@
 # Configuring OIDC for Kubernetes
 
 
-This follows from my [blog post located here](https://vrelevant.net/oidc-devops-and-sre-level-part-3/). There are a series of three posts covering OAAuth and OIDC that are helpful 
+> [!NOTE]
+> This follows from my [blog post located here](https://vrelevant.net/oidc-devops-and-sre-level-part-3/). There are a series of three posts covering OAAuth and OIDC that are helpful 
 in understanding the steps below.
 
 ### Signup for an Okta Developer Account
@@ -12,7 +13,8 @@ https://developer.okta.com/signup/
 
 1. From the `Directory` link in the left gutter, use the `Group` and `People` links to create a group called `k8s-cluster-admins` and a user. Set the user password to not require change on first login. Place the user in the group.
 
-_For the flow of this guide, preface your group names with `k8s-` (e.g. k8s-cluster-admins)._
+> [!TIP]
+> _For the flow of this guide, preface your group names with `k8s-` (e.g. k8s-cluster-admins)._
 
 ![image](https://user-images.githubusercontent.com/45366367/232320134-f70a913d-5eb6-4251-a0b6-d284d245f2a7.png)
 
